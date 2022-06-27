@@ -22,17 +22,17 @@ This report can be utilized by marketing deparments for sports leagues and teams
 
 ---
 ## Sources:
-reddit.com/r/soccer
-reddit.com/r/nfl
-reddit.com/r/nba
-reddit.com/r/hockey
-reddit.com/r/baseball
+- reddit.com/r/soccer
+- reddit.com/r/nfl
+- reddit.com/r/nba
+- reddit.com/r/hockey
+- reddit.com/r/baseball
 
 
 ---
 ## Data Dictionary:
-title(string) - Content of the post
-subreddit(string) - Subreddit the post was taken from
+- title(string) - Content of the post
+- subreddit(string) - Subreddit the post was taken from
 
 ---
 ## Notebooks:
