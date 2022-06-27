@@ -51,7 +51,7 @@ Final model in separate notebook for readability
 ### CountVec.ipynb
 Created function to look at common words
 
-## sia-scoring.ipynb
+### sia-scoring.ipynb
 Applied sentiment intensity analysis to posts
 
 ---
