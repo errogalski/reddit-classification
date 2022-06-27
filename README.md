@@ -1,16 +1,16 @@
 # reddit-classification
-An ensemble model that classifies the sports a Internet post is discussing using NLP
+An ensemble model that classifies sports Internet posts are discussing using NLP
 
 ## Executive Summary
 In our modern world of the internet and huge amounts of information it has become increasingly important to ensure that you are doing everything you can to beat the noise and get through to users. This means both identifying which users to target and how to best capture their interest and nothing in the world can tell you how to do that better than the users themselves. 
 
-While this may seem to be a daunting task, utilizing the right tools can make it extremely manageable. In this report we present an opportunity to utilize a tool called natural language processing to compare posts of different users to identify what they're talking about and what they're passionate about. 
+While this may seem to be a daunting task, utilizing the right tools can make it extremely manageable. In this report we present an opportunity to utilize a tool called natural language processing to compare posts of different users to identify what sport they are talking about and what sports they are passionate about. 
 
-Our model uses posts from reddit.com to get sample of how users interested in different topics talk about that topic. With that information we can apply our model to other posts and predict what users are talking about. This report specifically focuses on taking a look at five major sports: baseball, basketball, football, hockey, and soccer. 
+Our model uses posts from reddit.com to get samples of how users interested in different sports are speaking about that topic. We analyzed the terminology, common phrases, as well as post sentiments. With that information, we were able to apply our model to other Reddit posts - ones the model had never seen before - and get predictions on which sports users were discussing. This report specifically focuses on examining the differences in language used to discuss five major sports: baseball, basketball, football, hockey, and soccer. 
 
-This methodology has proven to be extremely effective at identifying which of these major sports is being talked about by a given post. A marketing team can then apply this model to posts on other social media sites to find fans they may not already be reaching and make sure they engage with those users.
+This methodology has proven to be extremely effective at identifying which of these major sports is being discussed in a given post. We recommend this model be used by a marketing team on other social media sites such as Facebook or Twitter, which are not separated into forums specific to their topics, to find fans they may not already be reaching and make sure they engage with those users.
 
-We can also further analyze discussion to find out which players or aspects of the sport are being talked about more positively or negatively to inform marketing decisions of what to promote to continue to increase fan excitement or capture new fans.
+We can also further analyze discussion to find out which players or aspects of the sport are being talked about more positively or negatively to inform marketing decisions of what to promote to continue to increase fan excitement or capture new fans. For example, does our model tell us there is a certain player that is garnering a lot of excitement at the moment? Perhaps a marketing team could look into promoting that player's jersey.
 
 
 ## Problem Statement:
@@ -45,7 +45,7 @@ Created functions to drop unnecessary features and clean data
 ### workflow.ipynb
 Experimented with different models
 
-### best-model.ipynb
+### model.ipynb
 Final model in separate notebook for readability
 
 ### CountVec.ipynb
@@ -56,9 +56,9 @@ Applied sentiment intensity analysis to posts
 
 ---
 ## Analysis:
-In our analysis we ingested the titles of reddit posts from r/nfl and r/soccer in a logistic regression model to predict with natural language processing which sport's subreddit a post came from. This initial model was able to predict the sport being discussed very accurately, with a recall score of 0.94. We then expanded the scope to include r/baseball, r/nba, and r/hockey. We again found that our model was very successful, scoring a 0.88. 
+In our analysis, we ingested the titles of reddit posts from r/nfl and r/soccer in a logistic regression model to predict with natural language processing which sport's subreddit a post came from. This initial model was able to predict the sport being discussed very accurately, with a recall score of 0.94. We then expanded the scope to include r/baseball, r/nba, and r/hockey. We again found that our model was very successful, scoring a 0.88. 
 
-We also utilized sentiment intensity analysis to take a look at the sentiment behind the language being used for each sport. This model, however gave much less definitive results finding the overwhelming majority of posts to be written with neutral language. This is likely due to utilizing primarily post titles for our dataset since text posts are rare in the sports subreddits and most of these titles read as news headlines rather than discussion with strong positive or negative sentiment. 
+We also utilized sentiment intensity analysis to take a look at the sentiment behind the language being used for each sport. This model, however gave much less definitive results, finding the overwhelming majority of posts to be written with neutral language. This is likely due to us utilizing primarily post titles for our dataset since text posts are rare in the sports subreddits. Most of these titles read as news headlines rather than discussion with strong positive or negative sentiment. 
 
 ---
 ## Conclusion:
